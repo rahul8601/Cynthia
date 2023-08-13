@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "General Sans", "General Sans Medium";
+}
+
+/*########---mouse-moving-cercal---####### */
+#curser-follower {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.scrollanimi {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s;
+}
+
+/* ########################################*/
+
+/* ########################################
+############---Hero-Section---########### */
+
+/* <!----------Nav Bar------------> */
+#main {
+  background-color: #000;
+  position: relative;
+}
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+
+.hth1 {
+  transform: translatey(104px);
+}
+
+#hero-font > div {
+  overflow: hidden;
+}
+
+#nav h4 {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transform: translateY(32px);
+  cursor: pointer;
+}
+
+.menuPairent {
+  height: 26px;
+  display: flex;
+  overflow: hidden;
+}
+
+#menuBtn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transform: translateY(32px);
+  cursor: pointer;
+  display: flex;
+}
+
+#menuBtn:hover {
+  text-decoration: underline;
+  /* transition: 0.5s; */
+}
+
+#nav {
+  padding: 0 43px;
+  height: 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+  z-index: 2;
+}
+#nav-span {
+  font-weight: 700;
+}
+
+#nav-hide {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  transform: translateY(-70%);
+  /* transition: 0.5s; */
+}
+
+.a {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* <!----------Hero-text------------> */
+
+#hero {
+  display: grid;
+  align-content: space-between;
+  height: 100vh;
+  padding: 0px 43px;
+}
+
+#hero-font {
+  margin-top: 170px;
+  width: fit-content;
+}
+
+#hero-font h5 {
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+}
+
+#footer-top {
+  display: grid;
+  justify-content: end;
+}
+
+#footer-top > div {
+  overflow: hidden;
+}
+
+#footer-top h5 {
+  display: flex;
+  justify-content: right;
+  transform: translateY(-20px);
+}
+#hero-Dsinr {
+  margin-left: 160px;
+}
+
+#hero-font h1 {
+  color: #a3a3a3;
+  font-size: 10vw;
+  font-weight: 500;
+  line-height: 0.8;
+  font-family: "General Sans Medium";
+  margin-top: 5px;
+}
+
+#bottom-arow div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #a3a3a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#bottom-arow {
+  display: flex;
+}
+
+.fa-solid {
+  font-size: 14px;
+}
+
+#bottom-text {
+  justify-content: space-between;
+  display: flex;
+  transform: translateY(30px);
+}
+
+#bottom-text-pairent {
+  overflow: hidden;
+}
+
+#bottom-text > h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #fff;
+}
+
+#bottom-text > h5:hover .arrowi {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+
+#hero-font div h5 {
+  transform: translateY(-33px);
+}
+
+.arrowi {
+  transition: 0.5s;
+}
+
+#bottom-text h1,
+h5 {
+  font-size: 16px;
+  color: #fff;
+}
+
+/*############---Hero-Section-End--####### 
+ ########################################*/
+
+/* ####################################
+###########---Section-2-Start--########### */
+
+#section-2 {
+  height: 100vh;
+  margin-top: 16vw;
+  padding: 0px 50px;
+}
+
+.flex {
+  color: #a3a3a3;
+  width: 80vw;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #a3a3a3;
+  padding: 30px 0px 30px 0px;
+  position: relative;
+}
+
+.section-2-div1 > img {
+  right: 200px;
+}
+.section-2-div2 > img {
+  right: 200px;
+}
+.section-2-div3 > img {
+  right: 200px;
+}
+
+.flex > img {
+  width: 250px;
+  height: 220px;
+  /* border-radius: 20px; */
+  position: absolute;
+  opacity: 0;
+  transform: translateX(100px);
+  /* transform: translatez(45deg); */
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.flex > h1 {
+  font-size: 8vw;
+}
+
+.opacity:hover {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.section-2-div3 {
+  border-bottom: 2px solid #a3a3a3;
+}
+
+.section-2-div1 h4 {
+  color: #fff;
+}
+.section-2-div2 h4 {
+  color: #fff;
+}
+.section-2-div3 h4 {
+  color: #fff;
+}
+
+/*############---Section-2-End--############# 
+ ########################################*/
+
+/* ####################################
+###########---Section-3-Start--########### */
+
+#section-3 {
+  height: 90vh;
+  background-color: #000;
+  padding: 50px 44px;
+}
+#section-3 > div {
+  height: 80%;
+  margin-top: 8%;
+  position: relative;
+}
+
+.aboutsection > div img {
+  width: 16vw;
+}
+
+.imgdiv {
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.aboutsection {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.about > p {
+  width: 444px;
+  color: #fff;
+  line-height: 22px;
+}
+
+.botm-about {
+  position: absolute;
+  bottom: 0px;
+}
+
+.botm-about > h4 {
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn {
+  width: 90px;
+  height: 30px;
+  border-radius: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  transition: 0.5s;
+  background-color: #a3a3a3;
+}
+
+/*############---Section-3-End--############# 
+ ########################################*/
+
+/* ####################################
+###########---Footer-3-Start--########### */
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  width: 100%;
+  padding: 10px 43px;
+  margin-top: 50px;
+}
+
+.footer-right {
+  display: flex;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  width: 360px;
+  justify-content: space-between;
+}
+.footer-left {
+  color: #fff;
+}
+
+.footer-right h3 {
+  font-size: 15px;
+}
+
+/*############---Footer-3-End--############# 
+ ########################################*/
